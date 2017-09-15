@@ -1,4 +1,6 @@
-<h1>Enter your word below</h1>
+<div class="container jumbotron">
+    <h1>Add a word!</h1>
+</div>
 <br>
 <form method="post" action="/">
   <div class="form-group">
@@ -9,8 +11,14 @@
 </form>
 <br>
 <% if @list_of_words.length > 0 %>
- <h3><%= "Click words below to see and edit" %></h3>
-<% end %>
-<% @list_of_words.each do |single_word|%>
-  <p><a href="/output/<%= single_word.my_word %>"><%= single_word.my_word() %></a></p>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= "Edit word below" %></h3>
+    </div>
+    <div class="panel-body">
+      <% @list_of_words.each do |single_word|%>
+        <p><a href="/output/<%= single_word.my_word %>"><%= single_word.my_word() %></a></p>
+      <% end %>
+    </div>
+  </div>
 <% end %>
