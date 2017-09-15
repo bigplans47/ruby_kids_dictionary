@@ -12,3 +12,5 @@ class Word
   def the_words
     @@the_words
   end
+
+end
