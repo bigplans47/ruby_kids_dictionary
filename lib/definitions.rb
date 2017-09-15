@@ -13,4 +13,9 @@ class Word
     @@the_words
   end
 
+  def save_word()
+    @@the_words.push(@my_word)
+  end
+
+
 end

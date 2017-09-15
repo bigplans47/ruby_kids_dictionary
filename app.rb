@@ -9,3 +9,9 @@ get('/') do
   @the_words = Word.the_words
   erb(:index)
 end
+
+post('/') do
+  new_word = params.fetch("your_word")
+  add_word = Word.new(new_word)
+  add_word.save_word()
+end
