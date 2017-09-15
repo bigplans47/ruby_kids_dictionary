@@ -14,7 +14,7 @@ class Word
   end
 
   def save_word()
-    @@the_words.push(@my_word)
+    @@the_words.push(self)
   end
 
 
