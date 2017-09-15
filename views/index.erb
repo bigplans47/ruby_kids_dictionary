@@ -12,5 +12,5 @@
  <h3><%= "Click words below to see and edit" %></h3>
 <% end %>
 <% @list_of_words.each do |single_word|%>
-  <p><%= single_word.my_word  %></p>
+  <p><a href="/output/<%= single_word.my_word %>"><%= single_word.my_word() %></a></p>
 <% end %>
