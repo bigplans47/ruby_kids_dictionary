@@ -9,7 +9,7 @@ class Word
     @id = @@the_words.length + 1
   end
 
-  def the_words
+  def self.the_words
     @@the_words
   end
 

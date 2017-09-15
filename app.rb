@@ -7,5 +7,5 @@ require('capybara')
 
 get('/') do
   @the_words = Word.the_words
-  erb(:index) 
+  erb(:index)
 end
