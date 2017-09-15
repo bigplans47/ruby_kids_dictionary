@@ -1,9 +1,5 @@
-<!-- @list_of_words.each do |single_word| -->
-<% @list_of_words.each do |single_word|%>
-  <%= single_word  %>
-<% end %>
-
-<h2>Enter your word</h2>
+<h1>Enter your word below</h1>
+<br>
 <form method="post" action="/">
   <div class="form-group">
     <label for="your_word">Your Word</label>
@@ -11,3 +7,10 @@
   </div>
   <button type="submit" class="btn btn-primary">Add</button>
 </form>
+<br>
+<% if @list_of_words.length > 0 %>
+ <h3><%= "Click words below to see and edit" %></h3>
+<% end %>
+<% @list_of_words.each do |single_word|%>
+  <p><%= single_word.my_word  %></p>
+<% end %>
