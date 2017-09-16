@@ -23,7 +23,7 @@ class Word
       if word.id == only_id
         return word.my_word
       else
-        return "yo2"
+        # puts "yo2"
       end
     end
   end

@@ -21,12 +21,6 @@ end
 get('/output/:id') do
   @list_of_words = Word.the_words()
   @id_number = params[:id]
-
-  @word_object = Word.find(@id_number)
-  binding.pry
-
-
-
-
+  @page_word = Word.find(@id_number)
   erb(:output)
 end

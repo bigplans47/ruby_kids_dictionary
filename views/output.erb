@@ -1,11 +1,8 @@
-<!-- <div class="jumbotron"> -->
-  <% @list_of_words.each do |word| %>
-    <% if word == @word_object %>
-      <h3><%= word.my_word %></h3>
-    <% end %>
-  <% end %>
-<!-- </div> -->
-
-
-
-<h3>Add a definition</h3>
+<h3>Add a definition for: <%= @page_word %></h3>
+<form class="" action="/output/<% @id_number %>" method="post">
+  <div class="form-group">
+    <label for="your_def">Your Definition</label>
+    <input type="text" name="your_def" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-success">Add</button>
+</form>
