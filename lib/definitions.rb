@@ -17,5 +17,15 @@ class Word
     @@the_words.push(self)
   end
 
+  def self.find(only_id)
+    only_id = only_id.to_i
+    @@the_words.each do |word|
+      if word.id == only_id
+        return word.my_word
+      else
+        return "yo2"
+      end
+    end
+  end
 
 end

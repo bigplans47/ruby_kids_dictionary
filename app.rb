@@ -14,13 +14,19 @@ post('/') do
   new_word = params.fetch("your_word")
   add_word = Word.new({:my_word => new_word})
   add_word.save_word()
-  @id =
   @list_of_words = Word.the_words()
   erb(:index)
 end
 
 get('/output/:id') do
-  @id = params[:id] 
   @list_of_words = Word.the_words()
+  @id_number = params[:id]
+
+  @word_object = Word.find(@id_number)
+  binding.pry
+
+
+
+
   erb(:output)
 end

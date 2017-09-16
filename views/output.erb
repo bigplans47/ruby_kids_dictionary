@@ -1,3 +1,11 @@
-<div class="jumbotron">
-  <h4><%= @list_of_words.id %>Add a definition</h4>  
-</div>
+<!-- <div class="jumbotron"> -->
+  <% @list_of_words.each do |word| %>
+    <% if word == @word_object %>
+      <h3><%= word.my_word %></h3>
+    <% end %>
+  <% end %>
+<!-- </div> -->
+
+
+
+<h3>Add a definition</h3>
