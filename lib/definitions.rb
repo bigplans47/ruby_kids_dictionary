@@ -30,4 +30,13 @@ class Word
     end
   end
 
+  def self.find_word_def(id_to_find)
+    id_to_find = id_to_find.to_i
+    @@the_words.each do |word|
+      if word.id == id_to_find
+        return word.word_def
+      end
+    end
+  end
+
 end
