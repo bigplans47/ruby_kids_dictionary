@@ -36,7 +36,6 @@ post('/output/:id') do
   @page_word = Word.find(@id_number)
   # @page_word.word_def << new_def
   @page_def = Word.find_word_def(@id_number)
-  @page_def << ", "+new_def
+  @page_def << new_def + ". "
   erb(:output)
-
 end

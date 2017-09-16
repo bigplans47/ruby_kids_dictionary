@@ -1,11 +1,14 @@
-<h3 class="well">Add a definition for: <%= @page_word %></h3>
+
+<% if @page_def != "" %>
+  <h3 class="jumbotron">Definition of: <%= @page_word %></h3>
+  <h4 class="well"><%= @page_def %></h4>
+<% end %>
+
 <form action="/output/<%= @id_number %>" method="post">
   <div class="form-group">
-    <label for="your_def">Your Definition</label>
+    <br>
+    <label for="your_def">Add Your Definition</label>
     <input type="text" name="your_def" class="form-control">
   </div>
   <button type="submit" class="btn btn-success">Add</button>
 </form>
-<% if @page_def != "" %>
-  <h4 class="well"><%= @page_def %></h4>
-<% end %>
