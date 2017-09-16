@@ -24,3 +24,8 @@ get('/output/:id') do
   @page_word = Word.find(@id_number)
   erb(:output)
 end
+
+post('/output/:id') do
+  new_def = params.fetch("your_def")
+  
+end

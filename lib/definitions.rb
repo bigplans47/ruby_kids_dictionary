@@ -3,10 +3,12 @@ class Word
   @@the_words = []
 
   attr_reader(:my_word, :id)
+  attr_accessor(:word_def)
 
   def initialize(attributes)
     @my_word = attributes.fetch(:my_word)
     @id = @@the_words.length + 1
+    @word_def = ""
   end
 
   def self.the_words
