@@ -2,7 +2,7 @@ class Word
 
   @@the_words = []
 
-  attr_reader(:my_word)
+  attr_reader(:my_word, :id)
 
   def initialize(attributes)
     @my_word = attributes.fetch(:my_word)

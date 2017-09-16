@@ -17,7 +17,7 @@
     </div>
     <div class="panel-body">
       <% @list_of_words.each do |single_word|%>
-        <p><a href="/output/<%= single_word.my_word %>"><%= single_word.my_word() %></a></p>
+        <p><a href="/output/<%= single_word.id %>"><%= single_word.my_word() %></a></p>
       <% end %>
     </div>
   </div>
