@@ -11,15 +11,14 @@ describe("Words#the_words") do
     word2.save_word
     expect(Word.the_words[0].my_word).to(eq("car"))
     expect(Word.the_words[1].my_word).to(eq("forever"))
+    Word.clear()
   end
 
-  it("allows user to add a definition to a car") do
-  hash_0 = Word.the_words[0]
-  the_id = hash_0.id
-  {:word_def => "a road vehicle, typically with four wheels, powered by an internal combustion engine and able to carry a small number of people."}
-  the_def = Word.find_word_def(the_id)
-  expect(the_def << "a road vehicle, typically with four wheels, powered by an internal combustion engine and able to carry a small number of people." )
-
+  it("allows user to add a definition to a the word forever") do
+  word2 = Word.new({:my_word => "forever"})
+  word2.save_word
+  Word.update_word_def(1, "For an unlimted amount of time")
+  expect(word2.word_def).to(eq("For an unlimted amount of time. "))
   end
 
 

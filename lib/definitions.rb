@@ -47,14 +47,13 @@ class Word
     id_to_find = id_to_find.to_i
     @@the_words.each do |word|
       if word.id == id_to_find
-        return word.word_def << add + ". "
+        word.word_def = word.word_def.concat(add + ". ")
+        return word.word_def
+        # return word.word_def << add + ". "
       end
     end
   end
 
-  # def self.update_def(add)
-  #   self << add + ". "
-  # end
 
 
 end
