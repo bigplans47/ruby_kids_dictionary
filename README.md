@@ -37,4 +37,4 @@ License
 
 {MIT License}
 
-Copyright (c) 2017 {Dan Kiss}
+Copyright (c) 2017 {Dan Kiss} 

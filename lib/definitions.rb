@@ -1,24 +1,18 @@
 class Word
-
   @@the_words = []
-
   attr_reader(:my_word, :id)
   attr_accessor(:word_def)
-
   def initialize(attributes)
     @my_word = attributes.fetch(:my_word)
     @id = @@the_words.length + 1
     @word_def = ""
   end
-
   def self.the_words
     @@the_words
   end
-
   def save_word()
     @@the_words.push(self)
   end
-
   def self.find(only_id)
     only_id = only_id.to_i
     @@the_words.each do |word|
@@ -29,7 +23,6 @@ class Word
       end
     end
   end
-
   def self.find_word_def(id_to_find)
     id_to_find = id_to_find.to_i
     @@the_words.each do |word|
@@ -38,11 +31,9 @@ class Word
       end
     end
   end
-
   def self.clear()
     @@the_words = []
   end
-
   def self.update_word_def(id_to_find, add)
     id_to_find = id_to_find.to_i
     @@the_words.each do |word|
@@ -53,7 +44,4 @@ class Word
       end
     end
   end
-
-
-
 end
