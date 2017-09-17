@@ -1,6 +1,6 @@
-{Definitions Website}
+{Definitions Website, see it on Heroku at https://enigmatic-plateau-22849.herokuapp.com/}
 
-{The application allows the user to add words to a website then add defitions to the words}
+{The application allows the user to add words to a website then add defitions to the words }
 
 By {Dan Kiss}
 
@@ -37,4 +37,4 @@ License
 
 {MIT License}
 
-Copyright (c) 2017 {Dan Kiss} 
+Copyright (c) 2017 {Dan Kiss}
