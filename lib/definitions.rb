@@ -18,8 +18,6 @@ class Word
     @@the_words.each do |word|
       if word.id == only_id
         return word.my_word
-      else
-        # puts "yo2"
       end
     end
   end
@@ -40,7 +38,6 @@ class Word
       if word.id == id_to_find
         word.word_def = word.word_def.concat(add + ". ")
         return word.word_def
-        # return word.word_def << add + ". "
       end
     end
   end
