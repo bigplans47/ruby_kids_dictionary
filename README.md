@@ -1,4 +1,4 @@
-{[Heroku Link to the Definitions Website]<a href="https://enigmatic-plateau-22849.herokuapp.com/">Heroku Link to the Definitions Website</a>}
+{[Heroku Link to the Definitions Website]<a href="https://enigmatic-plateau-22849.herokuapp.com/">Heroku Link to the Definition Website</a>}
 
 {The application allows the user to add words to a website then add definitions to the words }
 
