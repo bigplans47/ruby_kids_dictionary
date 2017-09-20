@@ -1,6 +1,6 @@
-{Definitions Website, see it on Heroku at https://enigmatic-plateau-22849.herokuapp.com/}
+{[Heroku Link to the Definitions Website]<a href="https://enigmatic-plateau-22849.herokuapp.com/">Heroku Link to the Definitions Website</a>}
 
-{The application allows the user to add words to a website then add defitions to the words }
+{The application allows the user to add words to a website then add definitions to the words }
 
 By {Dan Kiss}
 
